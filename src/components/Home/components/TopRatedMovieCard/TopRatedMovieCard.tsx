@@ -1,8 +1,8 @@
-import styles from "./BestMovieCard.module.css"
+import styles from "./TopRatedMovieCard.module.css"
 import MovieImage from "../MovieImage/MovieImage";
 import YellowBtn from "../YellowBtn/YellowBtn";
 
-interface BMCardType {
+interface BMCardProps {
     id: Number;
     bmTitle: string;
     bmText: string;
@@ -10,7 +10,7 @@ interface BMCardType {
     onMovie: Number;
 }
 
-export default function BestMovieCard({ id, bmTitle, bmText, bmImg, onMovie }: BMCardType) {
+export default function TopRatedMovieCard({ id, bmTitle, bmText, bmImg, onMovie }: BMCardProps) {
     return (
         <div className={styles.bestMovieContainer} style={{ width: onMovie === id ? "500px" : "190px" }}>
             <MovieImage
@@ -22,7 +22,7 @@ export default function BestMovieCard({ id, bmTitle, bmText, bmImg, onMovie }: B
             {onMovie === id &&
                 <div className={styles.bestMovieInfo}>
                     <div className={styles.bmTitle}>{bmTitle}</div>
-                    <div className={styles.bmText}>{bmText}</div>
+                    {/* <div className={styles.bmText}>{bmText}</div> */}
                     <YellowBtn btnName="More Information" />
                 </div>
             }

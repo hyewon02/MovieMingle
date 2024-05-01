@@ -23,12 +23,13 @@
 }
 .bestMovieImg {
     height: 100%;
-    width: 100%;
+    width: 190px;
     background-position: center;
     background-size: cover;
 }
 .bestMovieInfo{
     color: #dadce3;
+    width: 310px;
     padding: 15px;
     padding-right: 0;
 }
