@@ -1,0 +1,43 @@
+.bestMovieContainer {
+    position: relative;
+    top: -30px;
+    height: 300px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: #18181b;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.bestMovieImgBox {
+    height: 300px;
+    width: 190px;
+
+}
+
+.bestMovieImg {
+    height: 100%;
+    width: 190px;
+    background-position: center;
+    background-size: cover;
+}
+
+.bestMovieInfo {
+    color: #dadce3;
+    width: 310px;
+    padding: 15px;
+    padding-right: 0;
+}
+
+.bmTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+}
+
+.bmText {
+    margin: 15px 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+}

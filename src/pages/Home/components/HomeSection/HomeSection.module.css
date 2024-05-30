@@ -1,0 +1,19 @@
+.HomeSectionContainer {
+    color: white;
+    margin: 0 50px;
+}
+
+.homeSectionTitle>div {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    color: #dadce3;
+    font-size: 75px;
+}
+
+.homeSectionTitle>p {
+    font-family: 'InterVariable', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 0;
+    color: gray;
+}
