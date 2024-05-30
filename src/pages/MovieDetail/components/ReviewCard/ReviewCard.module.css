@@ -1,0 +1,14 @@
+.cardContainer {
+    width: 60%;
+    color: white;
+    border: 1px solid #fae04c;
+    margin: 10px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.moreBtn {
+    color: #fae04c;
+    margin: 10px 0;
+    cursor: pointer;
+}

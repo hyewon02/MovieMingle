@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    color: #fae04c;
+    font-family: 'Modak', Arial, Helvetica, sans-serif;
+    font-size: 120px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -45px;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.movieContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 60px;
+    margin: 0 70px;
+    margin-bottom: 70px;
+}

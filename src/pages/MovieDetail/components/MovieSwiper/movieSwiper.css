@@ -1,0 +1,12 @@
+.movieSwiper .swiper-button-prev,
+.movieSwiper .swiper-button-next {
+    top: 50%;
+    color: #18181b;
+    border-radius: 50px;
+    background-color: #fae04c;
+    padding: 25px 32px;
+}
+
+:root {
+    --swiper-navigation-size: 30px;
+}

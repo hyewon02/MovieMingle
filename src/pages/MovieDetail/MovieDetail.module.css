@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.detailContainer {
+    margin: 0 13%;
+}
+
+.title {
+    color: #fae04c;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.storyline {
+    width: 70%;
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.genres {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    display: inline;
+    color: #18181b;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #fae04c;
+    border-radius: 15px;
+}

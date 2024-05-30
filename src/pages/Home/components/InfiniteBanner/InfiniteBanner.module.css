@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+}
+
+.slideWrapper {
+    padding: 0;
+    display: flex;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    /* font-family: 'InterVariable',Arial, Helvetica, sans-serif; */
+    font-family: 'S-CoreDream-3Light', Arial, Helvetica, sans-serif;
+    color: #dadce3;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.original {
+    animation: 40s linear infinite normal none running rollingleft1;
+}
+
+.clone1 {
+    animation: 40s linear infinite rollingleft2;
+}
+
+@keyframes rollingleft1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    50.01% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollingleft2 {
+    0% {
+        transition: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}

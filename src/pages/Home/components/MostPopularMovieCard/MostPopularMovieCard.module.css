@@ -1,0 +1,36 @@
+.mpmContainer {
+    border-radius: 15px;
+    background-color: #232329;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.mpmWrapper {
+    padding: 16px;
+}
+
+.mpmTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: #dadce3;
+    cursor: pointer;
+}
+
+.mpmRating {
+    display: flex;
+    align-items: center;
+}
+
+.mpmTag {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    display: flex;
+}
+
+.tag {
+    margin: 0 5px;
+    margin-top: 5px;
+    /* border: 1px solid white;
+    padding: 5px;
+    border-radius: 20px; */
+}
