@@ -1,0 +1,28 @@
+.dialogPanel {
+    position: relative;
+    margin-right: auto;
+    top: 80px;
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #18181b;
+}
+
+.menuLink {
+    text-decoration: none;
+    margin-bottom: .5rem;
+    line-height: 1.5;
+}
+
+.menuItem {
+    font-size: 50px;
+    font-family: 'Modak', Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 20px;
+}
+
+.menuItem:hover {
+    color: #ffcc00;
+}

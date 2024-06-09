@@ -4,6 +4,7 @@ import styles from "./MostPopularMovieCard.module.css";
 import YellowBtn from "../YellowBtn/YellowBtn";
 import { Movie } from "../../../../types/movie";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 interface mpmCardProps {
   movie: Movie;
@@ -30,7 +31,9 @@ export default function MostPopularMovieCard({ movie }: mpmCardProps) {
             </p>
           </div>
         </Link>
-        <YellowBtn btnName="Review" />
+        <div>
+          <YellowBtn btnName="Add" />
+        </div>
       </div>
     </div>
   );
