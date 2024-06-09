@@ -28,7 +28,7 @@ export async function getTopRatedMovies() {
   }
 }
 
-export async function getMovieDetails(movie_id: string | undefined) {
+export async function getMovieDetails(movie_id: string | undefined | null) {
   try {
     const res = await fetch(`${apiUrl}/${movie_id}`, options);
     const json = await res.json();
