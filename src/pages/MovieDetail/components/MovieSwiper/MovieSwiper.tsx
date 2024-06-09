@@ -22,7 +22,7 @@ export default function MovieSwiper({ movies }: ImageSwiperProps) {
       <Swiper
         modules={[Navigation, A11y]}
         spaceBetween={50}
-        slidesPerView={4}
+        slidesPerView={3}
         navigation
         className="movieSwiper"
       >

@@ -1,6 +1,7 @@
 import styles from "./TopRatedMovieCard.module.css";
 import MovieImage from "../MovieImage/MovieImage";
 import YellowBtn from "../YellowBtn/YellowBtn";
+import { Link } from "react-router-dom";
 
 interface BMCardProps {
   id: Number;
@@ -8,6 +9,7 @@ interface BMCardProps {
   bmText: string;
   bmImg: string;
   onMovie: Number;
+  movieId: number;
 }
 
 export default function TopRatedMovieCard({
@@ -16,6 +18,7 @@ export default function TopRatedMovieCard({
   bmText,
   bmImg,
   onMovie,
+  movieId,
 }: BMCardProps) {
   return (
     <div
@@ -26,7 +29,9 @@ export default function TopRatedMovieCard({
       {onMovie === id && (
         <div className={styles.bestMovieInfo}>
           <div className={styles.bmTitle}>{bmTitle}</div>
-          <YellowBtn btnName="More Information" />
+          <Link to={`/movie/${movieId}`} style={{ textDecoration: "none" }}>
+            <YellowBtn btnName="More Information" />
+          </Link>
         </div>
       )}
     </div>

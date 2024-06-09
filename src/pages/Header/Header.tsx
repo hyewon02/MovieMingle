@@ -18,7 +18,12 @@ export default function Header() {
           <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
             <h3>MovieMingle</h3>
           </Link>
-          <div style={{ cursor: "pointer" }}>Search</div>
+          <Link
+            to={"/search"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div style={{ cursor: "pointer" }}>Search</div>
+          </Link>
         </div>
       </div>
     </div>

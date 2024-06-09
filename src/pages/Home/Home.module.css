@@ -55,3 +55,19 @@
     padding-bottom: 8px;
     border-bottom: 2px solid #fae04c;
 }
+
+@media (max-width:1600px) {
+    .mpMovies {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width:980px) {
+    .mpMovies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}

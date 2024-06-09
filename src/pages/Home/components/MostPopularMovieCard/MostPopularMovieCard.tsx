@@ -13,7 +13,7 @@ export default function MostPopularMovieCard({ movie }: mpmCardProps) {
   return (
     <div className={styles.mpmContainer}>
       <div className={styles.mpmWrapper}>
-        <Link to={`/popular/${movie.id}`} style={{ textDecoration: "none" }}>
+        <Link to={`/movie/${movie.id}`} style={{ textDecoration: "none" }}>
           <div style={{ margin: "0 auto", cursor: "pointer" }}>
             <MovieImage
               img={movie.poster_path}
@@ -31,9 +31,6 @@ export default function MostPopularMovieCard({ movie }: mpmCardProps) {
             </p>
           </div>
         </Link>
-        <div>
-          <YellowBtn btnName="Add" />
-        </div>
       </div>
     </div>
   );

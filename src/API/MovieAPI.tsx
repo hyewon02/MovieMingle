@@ -67,3 +67,16 @@ export async function getSimilarMovies(movie_id: string | undefined) {
     console.error(err);
   }
 }
+
+export async function getSearchMovies(query: string) {
+  try {
+    const res = await fetch(
+      `https://api.themoviedb.org/3/search/movie?query=${query}`,
+      options
+    );
+    const json = await res.json();
+    if (res.ok) return await json.results;
+  } catch (err) {
+    console.error(err);
+  }
+}

@@ -33,6 +33,7 @@ export default function Home() {
 
   const displayedMpMovies = mostPopularMovies.slice(0, 5);
   const topMovies = topRatedMovies.slice(0, 2);
+  const displayedTopMovies = topRatedMovies.slice(0, 5);
   return (
     <div className={styles.homeContainer}>
       <div style={{ height: "100px" }}></div>
@@ -51,6 +52,7 @@ export default function Home() {
               bmText={topMovie.overview}
               bmImg={topMovie.poster_path}
               onMovie={onMovie}
+              movieId={topMovie.id}
             />
           </div>
         ))}
@@ -74,12 +76,20 @@ export default function Home() {
       </div>
       <div style={{ marginTop: "210px" }}>
         <HomeSection
-          title="IMDb Top 10 Movies"
+          title="IMDb Top Movies"
           subtitle="As rated by regular IMDb voters"
         >
-          <div></div>
+          <div className={styles.mpMovies}>
+            {displayedTopMovies.map((movie, i) => (
+              <MostPopularMovieCard movie={movie} key={i} />
+            ))}
+          </div>
+          <Link to={"/top"} style={{ textDecoration: "none" }}>
+            <button className={styles.showMoreBtn}>View More</button>
+          </Link>
         </HomeSection>
       </div>
+      <div style={{ height: "100px" }}></div>
     </div>
   );
 }
